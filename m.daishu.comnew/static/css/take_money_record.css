@@ -1,0 +1,28 @@
+/******************个人中心设置样式********************/
+.banklist .lis .content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.banklist .lis .content div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 1.5rem;
+}
+.banklist .lis .content span {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+.banklist .lis .content span.jxz {
+  color: #ff5a49;
+}
+.banklist .lis .content span.cg {
+  color: #3dbdff;
+}

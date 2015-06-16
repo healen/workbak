@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>贷鼠网-充值</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/recharge.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/popup.css">
+ 
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+            <form class="register">
+                <div class="input input-warp">
+                   <input type="number" placeholder="充值金额" id="jine" />
+                </div>
+                <div class="btnbox">
+                    <input type="button" value="确认买入" id="buy_in">
+                </div>
+            </form>
+		</section>
+	</section>
+    <div id="popup"></div>
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../static/js/popup.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        $("#buy_in").on("tap",function(){
+            var jine=$("#jine").val();
+            if(!jine){
+                jine="null"
+            }
+             $.popup({
+                    transfrom: "", //效果
+                    title: "充值成功", //标题
+                    content:"充值成功，充值金额为：<span class='key'><b>"+jine+"</b></span> 元",//内容
+                    close: true, //是否关闭
+                    closeCallback:null,
+                    Dwidth: "70%",
+                    popupPosition:"fixed",
+                    btnList: [
+                        {
+                            class: "comfbox",
+                            text: "确认",
+                            callback: function(){
+                                window.location.href="my.html";
+                                $.close(".popup");
+                            }
+                        }
+                    ]
+            })
+        })
+
+
+
+
+        
+    </script>
+
+    
+	<!--页面JS-->
+	
+</body>
+</html>

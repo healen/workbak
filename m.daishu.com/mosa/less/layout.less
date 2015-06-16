@@ -1,0 +1,126 @@
+@import "../lib/reset";
+@import "../document"; 
+
+
+/*********************************************************************基础样式********************************************************************/
+.bg_grey{
+	background: @docBgColor;
+}
+
+.body-content{
+	height: 100%;
+	padding: 0.8rem 1rem;
+}
+.discribe{
+	font-size: @smallFontSize;
+	color: @assistColor;
+	margin-top: 1rem;
+}
+.pdt0{
+	padding-top: 0px;
+}
+
+.banklist{
+	._liststyle();
+	margin-top: 1rem;
+	img{
+		display: block;
+		width: 40px;
+		margin-right: 20px;
+	}
+	.content{
+		.-display ._flex(1);
+		h2{
+			font-size: @titleFontSize;
+		}
+		p{
+			color: @minorColor;
+		}
+	}
+	i{
+		
+		
+		color: #ffffff;
+		&.select{
+			display: block;
+			width: 24px;
+			height: 24px;
+			border-radius: 12px;
+			margin-right: 5px;
+			background:@docBgColor;
+			text-align: center;
+			line-height: 24px;
+			font-size: 12px;
+		}
+	}
+	.radio{
+		opacity: 0.0;
+		&:checked{
+			&+i{
+				&.select{
+					background-color: @markColor;
+				}
+			}
+		}
+	}
+}
+
+
+
+.key{
+	color: @keyColor;
+}
+
+@font-face {
+	font-family: 'dsFont';
+	src:url('@{fontURL}dsFont.eot?-ttl47x');
+	src:url('@{fontURL}dsFont.eot?#iefix-ttl47x') format('embedded-opentype'),
+		url('@{fontURL}dsFont.ttf?-ttl47x') format('truetype'),
+		url('@{fontURL}dsFont.woff?-ttl47x') format('woff'),
+		url('@{fontURL}dsFont.svg?-ttl47x#dsFont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i.icoFt{
+	font-family: 'dsFont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-huiyuan:before {
+	content: "\e600";
+}
+.icon-huodong:before {
+	content: "\e601";
+}
+.icon-jiantou:before {
+	content: "\e602";
+}
+.icon-mima:before {
+	content: "\e603";
+}
+.icon-qian:before {
+	content: "\e604";
+}
+.icon-s:before {
+	content: "\e958";
+}
+.icon-cog:before {
+	content: "\e994";
+}
+.icon-cross:before {
+	content: "\ea0f";
+}
+.icon-checkmark:before {
+	content: "\ea10";
+}
+
