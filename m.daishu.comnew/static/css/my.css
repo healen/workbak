@@ -117,10 +117,17 @@
 .lclist .title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #a2a9b2;
 }
 .lclist p {
   color: #a2a9b2;
   padding-bottom: 0.3rem;
+}
+.lclist p.title {
+  width: 100%;
+}
+.lclist p.title.hei {
+  color: #535a66;
 }
 .lclist section {
   display: -webkit-box;

@@ -6,7 +6,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 11;
+  z-index: 1005;
   display: none;
 }
 .popup .dialog {

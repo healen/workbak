@@ -34,7 +34,7 @@
 			margin-bottom: 10px;
 		}
 		h2{
-			font-size: @bigFontSize;;
+			font-size: @bigFontSize;
 		}
 	}
 	.bottom{
@@ -96,11 +96,18 @@
 	.title{
 		font-size: @titleFontSize;
 		margin-bottom: 0.5rem;
+		color:@minorColor;
 	}
 	p{
 		color:@minorColor;
 		// font-size: @smallFontSize;
-		padding-bottom: 0.3rem
+		padding-bottom: 0.3rem;
+		&.title{
+			width: 100%;
+			&.hei{
+				color:@majorColor;
+			}
+		}
 	}
 	section {
 	  display: -webkit-box;
