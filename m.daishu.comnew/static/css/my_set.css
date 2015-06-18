@@ -51,9 +51,9 @@
   display: -moz-box;
   display: -o-box;
   display: box;
-  -moz-box-align: end;
-  -webkit-box-align: end;
-  box-align: end;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
   -moz-box-pack: center;
   -webkit-box-pack: center;
   box-pack: center;
@@ -62,7 +62,14 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  line-height: 1.9rem;
+  height: 60px;
+  line-height: 60px;
+}
+.myhead .bottom .qure:active {
+  background: #eeedfa;
+}
+.myhead .bottom .qure:visited {
+  background: #ffffff;
 }
 .myhead .bottom .qure .yuan {
   font-family: Arial;

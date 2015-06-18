@@ -4,7 +4,6 @@
 @import "../document"; 
 
 /******************个人中心设置样式********************/
-
 .body-content{
 	padding:0rem 0rem;
 }
@@ -34,9 +33,16 @@
 		.-display ._box-align(center,start);
 		.qure{
 			.-display ._box();
-			.-display ._box-align(end,center);
+			.-display ._box-align(center,center);
 			.-display ._flex(1);
-			line-height: 1.9rem;
+			height: 60px;
+			line-height: 60px;
+			&:active{
+				background: @docBgColor;
+			}
+			&:visited{
+				background: #ffffff;
+			}
 			.yuan{
 				font-family: Arial;
 				display: block;
@@ -46,9 +52,6 @@
 				background-color:@inputMcr; 
 				text-align: center;
 				line-height: 2rem;
-
-
-				
 				color: @yuanColor;
 				margin-right: 5px;
 			}
