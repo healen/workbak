@@ -133,6 +133,7 @@
   color: #535a66;
 }
 .lclist {
+  display: block;
   margin: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #dfe3f0;
@@ -150,6 +151,7 @@
   padding-bottom: 0.3rem;
 }
 .lclis {
+  display: block;
   margin: 1.5rem 0rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #dfe3f0;
